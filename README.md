@@ -6,7 +6,7 @@
 
 <P> My idea and vision for this semester project is a contact and information page. I have an app that I have created Jose Got The Answer Right (https://apps.apple.com/us/app/jose-got-the-answer-right/id1606467299) and I would like a way to set up a page about me where people could reach me regarding the app as well as a blog type set up where I can post sermons where people can read them and help them grow spiritually. Also if I have time during the class of after, I want to eventually set it up where people can reach out to me and order tracts that I have created. The idea that comes to mind is a layout where people can order them and have the order emailed to me so that I can then get the cards printed and shipped. <P>
  
- <P> Timeline for Project: <P>
+ <H3> Timeline for Project: </H3>
  
 <ul> 
 <li> Adjust the HTML page to fit the need of a blog style page (6 Hours by 2/21) </li>
