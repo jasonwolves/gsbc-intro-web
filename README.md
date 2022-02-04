@@ -8,9 +8,8 @@
  
  <P> Timeline for Project: <P>
  
-<ul> 
-    <li> Adjust the HTML page to fit the need of a blog style page (6 Hours by 2/21) </li>
+* Adjust the HTML page to fit the need of a blog style page (6 Hours by 2/21)
 * Research how to create a blog style page and video players for web site (6 hours by 2/28)
 * Create and edit the CSS stylesheet (8 Hours by 2/28)
 * Write the JavaScript code for a working blog and video player UI (12 Hours by 2/28)
-</ul>
+
