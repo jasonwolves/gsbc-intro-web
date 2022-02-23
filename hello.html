@@ -4,11 +4,116 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title> Jose Got The Answer Right! </title>
+<style>
+
+.navbar {
+  overflow: hidden;
+  background-color: RoyalBlue;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar a {
+  float: left;
+  font-size: 20px;
+  color: White;
+  text-align: center;
+  padding: 26px 28px;
+  text-decoration: none;
+  justify-context: center;
+}
+
+.dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 20px;
+  border: none;
+  outline: none;
+  color: White;
+  padding: 26px 28px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: Gold;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
   
- 
+ </style>
+
     </head>
 
     <body>
+
+<!-- Dropdown Menu Button -->
+
+<div class="navbar">
+  <a href="https://jasonwolves.github.io/gsbc-intro-web/index.html">Jose Got The Answer Right Home</a>
+  <a href="https://jasonwolves.github.io/gsbc-intro-web/hello.html">Contact</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Video's
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+  </div>
+</div>
+
+
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+
+<!-- Dropdown Menu Button End -->
+
+
         <h1>Jose Got The Answer Right!</h1>
         
 <img src="Jose App Logo 2.jpg" alt="JGTAR" width="250" height="250">
