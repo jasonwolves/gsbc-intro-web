@@ -60,11 +60,16 @@
 	}
 
 .dropbtn {
-  background-color: DodgerBlue;
+  background-color: #3498DB;
   color: white;
-  padding: 25px;
-  font-size: 50px;
+  padding: 16px;
+  font-size: 16px;
   border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
 }
 
 .dropdown {
@@ -77,6 +82,7 @@
   position: absolute;
   background-color: #f1f1f1;
   min-width: 160px;
+  overflow: auto;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
@@ -88,11 +94,10 @@
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown a:hover {background-color: #ddd;}
 
-.dropdown:hover .dropdown-content {display: block;}
+.show {display: block;}
 
-.dropdown:hover .dropbtn {background-color: #3e8e41;}
 	
 	body {
 		 background-image: url("Jose_Solo adjusted.png"), url("Background_Yellow_Big.jpg");
@@ -111,15 +116,37 @@
 
 <!-- Dropdown Menu Button -->
 
-
-<div class="dropdown" style="float:right;">
-  <button class="dropbtn">Menu</button>
-  <div class="dropdown-content">
-    <a href="#">Link 1</a>
-    <a href="#">Link 2</a>
-    <a href="#">Link 3</a>
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
   </div>
-</div>	
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
 
 <!-- Dropdown Menu Button End -->
 
