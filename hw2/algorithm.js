@@ -1,8 +1,19 @@
-<p id="math"></p>
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Math</h2>
+
+<p id="demo"></p>
 
 <script>
-let func = Math.round((Math.random() * 1000) + 1);
-document.getElementById("math").innerHTML = x;
+document.getElementById("demo").innerHTML =
+Math.floor(Math.random() * 1001);
 </script>
+
+</body>
+</html>
+
+
 
 
