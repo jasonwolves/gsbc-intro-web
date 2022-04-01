@@ -1,19 +1,16 @@
-<!DOCTYPE html>
-<html>
-<body>
+var points = new Array(100);
+        for (var i = 1; i < 1000; i++) {
+            points[i] = i + 1;
+        }
 
-<h2>JavaScript Math</h2>
-
-<p id="demo"></p>
-
-<script>
-document.getElementById("demo").innerHTML =
-Math.floor(Math.random() * 1001);
-</script>
-
-</body>
-</html>
-
-
-
-
+        for (var i = 0; i < points.length; i++) {
+            console.log(points[i]);
+        }
+        
+        function getRandom(max)
+        {
+          
+        return Math.floor(Math.random()* max);
+            
+        }
+        
