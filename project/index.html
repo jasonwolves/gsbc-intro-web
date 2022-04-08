@@ -137,7 +137,30 @@
 
 }
         </style>
-
+        
+   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+   <script type="text/javascript">
+       (function() {
+           // https://dashboard.emailjs.com/admin/integration
+           emailjs.init('9miZGYIYv2S8omXIO');
+       })();
+   </script>
+   <script type="text/javascript">
+       window.onload = function() {
+           document.getElementById('contact-form').addEventListener('submit', function(event) {
+               event.preventDefault();
+               // generate a five digit number for the contact_number variable
+               this.contact_number.value = Math.random() * 100000 | 0;
+               // these IDs from the previous steps
+               emailjs.sendForm('contact_service', 'contact_form', this)
+                   .then(function() {
+                       console.log('SUCCESS!');
+                   }, function(error) {
+                       console.log('FAILED...', error);
+                   });
+           });
+       }
+   </script>
     </head>
 
     <body>
@@ -212,30 +235,7 @@ style="width:250px;height:250px;"></a> </div>
  
         </script>
 
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function() {
-                // https://dashboard.emailjs.com/admin/integration
-                emailjs.init('9miZGYIYv2S8omXIO');
-            })();
-        </script>
-        <script type="text/javascript">
-            window.onload = function() {
-                document.getElementById('contact-form').addEventListener('submit', function(event) {
-                    event.preventDefault();
-                    // generate a five digit number for the contact_number variable
-                    this.contact_number.value = Math.random() * 100000 | 0;
-                    // these IDs from the previous steps
-                    emailjs.sendForm('contact_service', 'contact_form', this)
-                        .then(function() {
-                            console.log('SUCCESS!');
-                        }, function(error) {
-                            console.log('FAILED...', error);
-                        });
-                });
-            }
-        </script>
-    </head>
+     
     <body>
         <form id="contact-form">
             <input type="hidden" name="contact_number">
