@@ -3,7 +3,33 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Jose Got The Answer Right</title>
+        <title>Contact Form</title>
+
+    <!-- Contact Form Code Begin -->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function() {emailjs.init('YOUR_PUBLIC_KEY');
+        })();
+    </script>
+ <script type="text/javascript">
+  window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // generate a five digit number for the contact_number variable
+          this.contact_number.value = Math.random() * 100000 | 0;
+          // these IDs from the previous steps
+          emailjs.sendForm('service_s0vwqc3', 'contact_form', this)
+              .then(function() {
+                  console.log('SUCCESS!');
+              }, function(error) {
+                  console.log('FAILED...', error);
+              });
+      });
+  }
+</script>
+
+<!-- Contact Form Code End -->
+
         <link rel="html" href="../hw1/hello.html">
         <link rel="html" href="../project/index.html">
         <link rel="html" href="../hw2/index.html">
@@ -137,9 +163,10 @@
 
 }
         </style>
-
+        
+   
     </head>
-
+   
     <body>
 
 <!-- Dropdown Menu Button -->
@@ -182,34 +209,29 @@ window.onclick = function(e) {
 
 <!-- Dropdown Menu Button End -->
 
-<h1>Jose Got The Answer Right</h1> 
+<!-- Contact Form Code 2 Begin -->
 
-        <p>Under Construction</p>
+<form id="contact-form">
+  <input type="hidden" name="contact_number">
+  <label>Name</label>
+  <input type="text" name="user_name">
+  <label>Email</label>
+  <input type="email" name="user_email">
+  <label>Message</label>
+  <textarea name="message"></textarea>
+  <input type="submit" value="Send">
+</form>
 
-        <p style="text-align: center;">Welcome to the Official Jose App website. I hope that you enjoy your time here and find what you are looking for. The purpose of this page is to be a home for the Jose App as well as a place to find hope in this turbulent world. </p>
+<!-- Contact Form Code 2 End -->
 
-<p>I hope this app is an encouragemnt to you and I hope that you put it to good use for the furtherence of the gospel. I encourage you if you have not considered your future and don't know for sure that you are on your way to Heaven that you would take the short time and watch the video that can tell you for sure how to know you can go to Heaven. </p>
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("9miZGYIYv2S8omXIO");
+   })();
+</script>
 
-<p style="text-align: center;
- font-size: 2.10em;
- color: MediumBlue;
-text-shadow: 2px 2px white;">If You Died Today Are You 100% Sure You Would Go To Heaven?</p>
-
-<p style="text-align: center;"><iframe title="vimeo-player" src="https://player.vimeo.com/video/369920176?h=57ce354932" width="640" height="360" frameborder="0" allowfullscreen></iframe></p>
-
-<p style="text-align: center;">If you are looking for more resources pertaining to this cartoon and would like more information about the other ways that God has allowed me to spread it then this is the place for you! If you have an IPhone or other IOS device, then the app is the perfect tool for you. It is completely free and allows you to have full access to all the videos that we have at the moment with no need for an internet or wifi connection. To download the app, simply click Jose down below to take you to the app store. </p>
-
-<div style="text-align:center;">
-<a href="https://apps.apple.com/us/app/jose-got-the-answer-right/id1606467299">
-<img src="Jose App Logo 2.jpg"
-style="width:250px;height:250px;"></a> </div>
-
-<p style="text-align: center;
-        font-size: 2.10em;
-        color: Red;">Click on Jose Above and Download the App Here!</p>
-
-
- 
-        </script>
     </body>
 </html>
