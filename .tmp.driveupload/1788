@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-65V7CFQ9JT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-65V7CFQ9JT');
+</script>
+    <title>HW2</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<!--Nav Bar Style-->
+<style>	
+
+    .navbar {
+        overflow: hidden;
+        background-color: DarkBlue;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      .navbar a {
+        float: left;
+        font-size: 20px;
+        color: White;
+        text-align: center;
+        padding: 26px 28px;
+        text-decoration: none;
+      }
+      
+      .dropdown {
+        float: right;
+        overflow: hidden;
+      }
+      
+      .dropdown .dropbtn {
+        cursor: pointer;
+        font-size: 20px;  
+        border: none;
+        outline: none;
+        color: White;
+        padding: 26px 28px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+      }
+      
+      .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+        background-color: Gold;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+      }
+      
+      .dropdown-content a:hover {
+        background-color: #ddd;
+      }
+      
+      .show {
+        display: block;
+      }
+      
+    </style>
+    
+    <!-- Dropdown Menu Button -->
+    
+    <div class="navbar">
+        <a href="https://jasonwolves.github.io/gsbc-intro-web/index.html">Home</a>
+        <a href="https://jasonwolves.github.io/gsbc-intro-web/hw1/hello.html">Contact/About</a>
+        <a href="https://jasonwolves.github.io/gsbc-intro-web/project/index.html">Order Cards</a>
+        <div class="dropdown">
+        <button class="dropbtn" onclick="myFunction()">Jose Cartoon
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="myDropdown">
+          <a href="https://jasonwolves.github.io/gsbc-intro-web/hw3/english.html">English</a>
+          <a href="https://jasonwolves.github.io/gsbc-intro-web/hw3/spanish.html">Spanish</a>
+          <a href="https://jasonwolves.github.io/gsbc-intro-web/hw3/arabic.html">Arabic</a>
+          <a href="https://jasonwolves.github.io/gsbc-intro-web/hw3/cebuano.html">Cebuano</a>
+          <a href="https://jasonwolves.github.io/gsbc-intro-web/hw3/ukraine.html">Ukrainian</a>
+          <a href="https://jasonwolves.github.io/gsbc-intro-web/hw3/swahili.html">Swahili</a>
+        </div>
+        </div>
+      </div>
+      
+      
+      <script>
+      /* When the user clicks on the button,
+      toggle between hiding and showing the dropdown content */
+      function myFunction() {
+        document.getElementById("myDropdown").classList.toggle("show");
+      }
+      
+      // Close the dropdown if the user clicks outside of it
+      window.onclick = function(e) {
+        if (!e.target.matches('.dropbtn')) {
+        var myDropdown = document.getElementById("myDropdown");
+          if (myDropdown.classList.contains('show')) {
+            myDropdown.classList.remove('show');
+          }
+        }
+      }
+      </script>
+      
+      <!-- Dropdown Menu Button End -->
+    
+ <div id="math"></div>
+
+</br>
+<h1>Homework 2</h1>
+</br>
+<iframe width="560" height="315" 
+src="https://www.youtube.com/embed/b005iHf8Z3g" 
+title="YouTube video player" 
+frameborder="0" 
+allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</br>
+<h2>Random Number Generator</h2>
+<button onClick="window.location.reload();">Generate Different Numbers</button>
+<h2>Array of Integer</h2>
+    <p>This is an array of random numbers: </p>
+    <p id = "numbers"> </p>
+<h2>Largest Number</h2>
+<p>The largest number is: </p>
+    <p id = "largest_number"></p>
+<h2>Sum of Numbers</h2>
+    <p>The sum of all these numbers in the array is: </p>
+    <p id = "sum"></p> 
+     <script src="algorithm.js"> </script> 
+
+
+    </body>
+</html>
