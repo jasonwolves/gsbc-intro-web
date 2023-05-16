@@ -1,42 +1,69 @@
-.
+changed jose cartoon ui
 # Please enter the commit message for your changes. Lines starting
 # with '#' will be ignored, and an empty message aborts the commit.
 #
 # On branch main
-# Your branch is ahead of 'origin/main' by 1 commit.
-#   (use "git push" to publish your local commits)
+# Your branch is up to date with 'origin/main'.
 #
 # Changes to be committed:
+#	modified:   index.html
+#
+# Changes not staged for commit:
 #	modified:   .DS_Store
-#	new file:   .tmp.driveupload/11122
-#	new file:   .tmp.driveupload/1784
-#	new file:   .tmp.driveupload/1788
-#	new file:   .tmp.driveupload/1789
-#	new file:   .tmp.driveupload/1791
-#	new file:   .tmp.driveupload/1795
-#	new file:   .tmp.driveupload/1796
-#	new file:   .tmp.driveupload/1797
-#	new file:   .tmp.driveupload/1798
-#	new file:   .tmp.driveupload/1799
-#	new file:   .tmp.driveupload/1807
-#	new file:   .tmp.driveupload/1808
-#	new file:   .tmp.driveupload/1830
-#	new file:   .tmp.driveupload/1834
-#	new file:   .tmp.driveupload/1836
-#	new file:   .tmp.driveupload/500814
-#	new file:   .tmp.driveupload/500816
-#	new file:   .tmp.driveupload/500818
-#	new file:   .tmp.driveupload/500820
-#	new file:   .tmp.driveupload/500822
-#	new file:   .tmp.driveupload/500824
-#	new file:   .tmp.driveupload/500828
-#	new file:   .tmp.driveupload/500830
-#	new file:   .tmp.driveupload/500834
-#	new file:   .tmp.driveupload/500836
-#	new file:   .tmp.driveupload/500838
-#	new file:   .tmp.driveupload/500840
-#	new file:   .tmp.driveupload/500844
-#	new file:   .tmp.driveupload/500846
-#	new file:   .tmp.driveupload/500848
-#	new file:   .tmp.driveupload/500850
+#	deleted:    .tmp.driveupload/11122
+#	deleted:    .tmp.driveupload/1784
+#	deleted:    .tmp.driveupload/1788
+#	deleted:    .tmp.driveupload/1789
+#	deleted:    .tmp.driveupload/1791
+#	deleted:    .tmp.driveupload/1795
+#	deleted:    .tmp.driveupload/1796
+#	deleted:    .tmp.driveupload/1797
+#	deleted:    .tmp.driveupload/1798
+#	deleted:    .tmp.driveupload/1799
+#	deleted:    .tmp.driveupload/1807
+#	deleted:    .tmp.driveupload/1808
+#	deleted:    .tmp.driveupload/1830
+#	deleted:    .tmp.driveupload/1834
+#	deleted:    .tmp.driveupload/1836
+#	deleted:    .tmp.driveupload/500814
+#	deleted:    .tmp.driveupload/500816
+#	deleted:    .tmp.driveupload/500818
+#	deleted:    .tmp.driveupload/500820
+#	deleted:    .tmp.driveupload/500822
+#	deleted:    .tmp.driveupload/500824
+#	deleted:    .tmp.driveupload/500828
+#	deleted:    .tmp.driveupload/500830
+#	deleted:    .tmp.driveupload/500834
+#	deleted:    .tmp.driveupload/500836
+#	deleted:    .tmp.driveupload/500838
+#	deleted:    .tmp.driveupload/500840
+#	deleted:    .tmp.driveupload/500844
+#	deleted:    .tmp.driveupload/500846
+#	deleted:    .tmp.driveupload/500848
+#	deleted:    .tmp.driveupload/500850
+#	deleted:    .tmp.driveupload/500852
+#	deleted:    .tmp.driveupload/500854
+#	deleted:    .tmp.driveupload/500856
+#	deleted:    .tmp.driveupload/500858
+#	deleted:    .tmp.driveupload/500860
+#	deleted:    .tmp.driveupload/500862
+#	deleted:    .tmp.driveupload/500864
+#	deleted:    .tmp.driveupload/500866
+#	deleted:    .tmp.driveupload/500868
+#	deleted:    .tmp.driveupload/500870
+#	deleted:    .tmp.driveupload/500872
+#	deleted:    .tmp.driveupload/500874
+#	deleted:    .tmp.driveupload/500876
+#	deleted:    .tmp.driveupload/500878
+#	deleted:    .tmp.driveupload/500880
+#	deleted:    .tmp.driveupload/500882
+#	deleted:    .tmp.driveupload/500884
+#	deleted:    .tmp.driveupload/500886
+#	deleted:    .tmp.driveupload/500888
+#	deleted:    .tmp.driveupload/500890
+#	deleted:    .tmp.driveupload/500892
+#	deleted:    .tmp.driveupload/500894
+#	deleted:    .tmp.driveupload/500896
+#	deleted:    .tmp.driveupload/500898
+#	deleted:    .tmp.driveupload/500900
 #
