@@ -521,6 +521,23 @@ img {
     text-align: center;
 }
 
+/* Question + short description in each language, above the video */
+.video-intro {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.video-intro .question {
+    margin-bottom: 12px;
+}
+
+.video-intro p {
+    max-width: 36em;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    color: var(--muted);
+}
+
 .question .highlight {
     background: linear-gradient(transparent 60%, rgba(245, 197, 24, 0.55) 60%);
 }
